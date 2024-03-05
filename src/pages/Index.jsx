@@ -1,4 +1,5 @@
-import { Box, Button, Container, Heading, VStack, HStack, Input, Image, Text, Table, Thead, Tbody, Tr, Th, Td, IconButton, useToast } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, VStack, HStack, Input, Image, Text, Table, Thead, Tbody, Tr, Th, Td, useToast } from "@chakra-ui/react";
+import ThemeToggleButton from "../components/ThemeToggleButton";
 import { FaPlus, FaShippingFast, FaHistory, FaCheck, FaBan, FaArchive } from "react-icons/fa";
 
 const Index = () => {
@@ -27,7 +28,8 @@ const Index = () => {
   };
 
   return (
-    <Container maxW="container.xl" py={5}>
+    <Container maxW="container.xl" py={5} position="relative">
+      <ThemeToggleButton />
       <Heading mb={5}>Master Cabinet</Heading>
       <VStack spacing={5} align="stretch">
         {/* Section A: Add a position to the internal stock */}
