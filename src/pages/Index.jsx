@@ -40,7 +40,7 @@ const Index = () => {
           <HStack>
             <Input placeholder="Unit/BZ Name" />
             <Input placeholder="Dimensions" />
-            <Button leftIcon={<FaPlus />} colorScheme="blue" onClick={handleAddPosition}>
+            <Button leftIcon={<FaPlus />} colorScheme="blue" onClick={handleAddPosition} px={4} py={2}>
               Add
             </Button>
           </HStack>
